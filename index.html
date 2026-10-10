@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090710" />
+  <title>For Dekchi ♡</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="progress-track"><div id="progress"></div></div>
+
+  <header class="topbar">
+    <span class="brand">D<span class="pink">.</span> ARCHIVE</span>
+    <span class="top-status"><i></i> A LITTLE SOMETHING FOR YOU</span>
+  </header>
+
+  <main>
+    <!-- SCENE 1: GLITCH INTRO -->
+    <section class="scene active" id="scene-0">
+      <div class="scene-content hero">
+        <div class="eyebrow"><span class="tiny-square"></span> PRIVATE TRANSMISSION / 001</div>
+        <div class="glitch-wrap">
+          <p class="mini-line">HEY, DEKCHI.</p>
+          <h1 class="glitch" data-text="YOU FOUND ME.">YOU FOUND ME.</h1>
+        </div>
+        <p class="muted hero-sub">A tiny corner of the internet, made just for you.</p>
+        <div class="terminal">
+          <div class="terminal-head">
+            <span class="terminal-dots"><i></i><i></i><i></i></span>
+            <span>dekchi.exe</span>
+            <span>LOCAL FILE</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="green">guest@archive</span>:~$ open birthday_surprise</p>
+            <p id="bootText" class="typed-line"></p>
+            <p class="terminal-hint">[ WAITING FOR USER INPUT ]</p>
+          </div>
+        </div>
+        <button class="action-btn" data-next>
+          <span>CLICK TO BEGIN</span><span class="arrow">↗</span>
+        </button>
+        <p class="tiny-note">BEST EXPERIENCED WITH SOUND ON · HEADPHONES OPTIONAL</p>
+      </div>
+      <span class="scene-number">01 / 06</span>
+    </section>
+
+    <!-- SCENE 2: A MESSAGE -->
+    <section class="scene" id="scene-1">
+      <div class="scene-content centered">
+        <p class="eyebrow">FILE FOUND / 002</p>
+        <p class="big-symbol">✳</p>
+        <h2 class="serif-heading">Okay, so...</h2>
+        <div class="message-card">
+          <p class="mono-label">A MESSAGE FOR DEKCHI</p>
+          <p id="messageTyping" class="large-message"></p>
+          <span class="blinking-cursor">_</span>
+        </div>
+        <p class="muted">No, this isn't a virus. Probably.</p>
+        <button class="action-btn" data-next>
+          <span>OKAY, I'M LISTENING</span><span class="arrow">↗</span>
+        </button>
+      </div>
+      <span class="scene-number">02 / 06</span>
+    </section>
+
+    <!-- SCENE 3: VIDEO MEMORY -->
+    <section class="scene" id="scene-2">
+      <div class="scene-content wide">
+        <p class="eyebrow">MEMORY FILE / 003</p>
+        <h2 class="serif-heading">A little piece of <em>us.</em></h2>
+        <p class="muted section-intro">Some moments deserve their own little screen.</p>
+        <div class="video-frame">
+          <div class="video-label"><span></span> PLAYBACK: FRIENDSHIP.LOG</div>
+          <video id="memoryVideo" controls playsinline preload="metadata" poster="assets/photo1.jpg">
+            <source src="assets/memories.mp4" type="video/mp4" />
+            Your browser doesn't support this video.
+          </video>
+          <p class="video-caption">a few seconds of memories, a whole lot of meaning.</p>
+        </div>
+        <button class="action-btn" data-next>
+          <span>OPEN THE MEMORY ARCHIVE</span><span class="arrow">↗</span>
+        </button>
+      </div>
+      <span class="scene-number">03 / 06</span>
+    </section>
+
+    <!-- SCENE 4: SCRAPBOOK -->
+    <section class="scene" id="scene-3">
+      <div class="scene-content wide">
+        <p class="eyebrow">MEMORY ARCHIVE / 004</p>
+        <h2 class="serif-heading">Evidence that we're <em>iconic.</em></h2>
+        <p class="muted section-intro">Nine little windows into our collection of memories.</p>
+
+        <div class="scrapbook">
+          <figure class="polaroid tilt-left">
+            <img src="assets/photo1.jpg" alt="Friendship memory 1" loading="lazy" />
+            <figcaption>the beginning of a little something ♡</figcaption>
+          </figure>
+          <figure class="polaroid tilt-right">
+            <img src="assets/photo2.jpg" alt="Friendship memory 2" loading="lazy" />
+            <figcaption>proof that we have lore</figcaption>
+          </figure>
+          <figure class="polaroid tilt-left">
+            <img src="assets/photo3.jpg" alt="Friendship memory 3" loading="lazy" />
+            <figcaption>this one stays in the archive</figcaption>
+          </figure>
+          <figure class="polaroid tilt-right">
+            <img src="assets/photo4.jpg" alt="Friendship memory 4" loading="lazy" />
+            <figcaption>no context. just us.</figcaption>
+          </figure>
+          <figure class="polaroid tilt-right">
+            <img src="assets/photo5.jpg" alt="Friendship memory 5" loading="lazy" />
+            <figcaption>one for the memory bank</figcaption>
+          </figure>
+          <figure class="polaroid tilt-left">
+            <img src="assets/photo6.jpg" alt="Friendship memory 6" loading="lazy" />
+            <figcaption>the kind of chaos I respect</figcaption>
+          </figure>
+          <figure class="polaroid tilt-right">
+            <img src="assets/photo7.jpg" alt="Friendship memory 7" loading="lazy" />
+            <figcaption>some things just make sense</figcaption>
+          </figure>
+          <figure class="polaroid tilt-left">
+            <img src="assets/photo8.jpg" alt="Friendship memory 8" loading="lazy" />
+            <figcaption>one of my favourite little moments</figcaption>
+          </figure>
+          <figure class="polaroid tilt-right">
+            <img src="assets/photo9.jpg" alt="Friendship memory 9" loading="lazy" />
+            <figcaption>to more memories, Dekchi ✳</figcaption>
+          </figure>
+        </div>
+
+        <div class="archive-note">
+          <span class="pink">✳</span>
+          <p>Different moments. Different moods. One person worth keeping in the story.</p>
+        </div>
+        <button class="action-btn" data-next>
+          <span>THERE'S ONE MORE THING</span><span class="arrow">↗</span>
+        </button>
+      </div>
+      <span class="scene-number">04 / 06</span>
+    </section>
+
+    <!-- SCENE 5: BIRTHDAY LETTER -->
+    <section class="scene" id="scene-4">
+      <div class="scene-content letter-scene">
+        <p class="eyebrow">UNSENT DRAFT / 005</p>
+        <h2 class="serif-heading">Dear <em>Dekchi,</em></h2>
+        <article class="letter">
+          <p><strong>To my Dekchi, on her special day… 💌</strong></p>
+          
+<p><strong>To my Dekchi, on her special day… 💌</strong></p>
+
+<p>I don't think I say it enough, but I really do appreciate you. The conversations, the random nonsense, the moments when we laugh over absolutely nothing, and even the times when things aren't particularly okay ....all of it means more to me than I probably EXPRESS. [ tmko pta hi h hum accha se express nhi kar pate] Sometimes it's not even about doing something extraordinary for someone. Sometimes, just having a person to talk to, share things with, or be completely unserious around is enough to make an ordinary day feel a little better. And I'm glad I have that with you. 🫂❤️</p>
+
+<p>On your birthday, I hope life is kind to you. I hope you get the things you've been quietly wishing for, the opportunities you've been working towards, and the happiness you deserve even on the days when you don't feel your best.</p>
+
+<p>I hope you never become so caught up in everything life expects from you that you forget to enjoy the little things. I hope you keep discovering new parts of yourself, keep learning, keep growing, and keep becoming someone you're proud of. And when things don't go according to plan, I hope you give yourself the same patience you'd give someone you care about. You don't have to have everything figured out all the time, okay?</p>
+
+<p>May bhagwan ji protect you from things that disturb your peace, bring the right people into your life, and help you find your way through the things you don't have answers to yet. May your efforts pay off, your dreams get closer, and your heart have plenty of reasons to feel happy. And may the wishes you keep to yourself find their way into reality too. 🧿✨</p>
+
+<p>And obviously, I hope we get to make many more memories together. More random conversations, more stupid jokes, more moments we'll probably laugh about months later, and more of those little things that might not mean much to anyone else but somehow become <em>our</em> memories. There's still plenty of nonsense left for us to experience, so don't think you're getting rid of me that easily. 😭🤚🏻</p>
+<p>Thank you for being you, Dekchi. For the person you are, for the memories we've made, and for the little ways you've become a part of my life. I'm grateful for our friendship, and I genuinely hope this next chapter brings you more reasons to smile than reasons to worry.</p>
+<p>So, happy birthday once again, you absolute weirdo. ❤️</p>
+
+<p>Keep that beautiful heart of yours, take care of yourself, chase the things you want, and never forget that your life is worth celebrating even on the most ordinary days.</p>
+<p>Here's to another year of you being you, and to all the memories we haven't made yet. 🥹🫶🏻</p>
+
+<p><strong>Happy Birthday, Dekchi.</strong></p>
+<p>Lots of love, the warmest wishes, and a big virtual hug. 🫂❤️🧿</p>
+<p><em>P.S. Enjoy your special day madam. And don't get too emotional reading this. likhte likhte to hum ro diye but tum mat ronaa plzzz 😭🤍 Itni mehnat se likha hai, thoda appreciate karna banta hai. 😭🤚🏻❤️</em></p>
+
+          <p class="signature">— from your favourite human (obviously) <span>♡</span></p>
+        </article>
+        <button class="action-btn" data-next>
+          <span>ONE LAST SURPRISE</span><span class="arrow">↗</span>
+        </button>
+      </div>
+      <span class="scene-number">05 / 06</span>
+    </section>
+
+    <!-- SCENE 6: VOICE MESSAGE ENDING -->
+    <section class="scene" id="scene-5">
+      <div class="scene-content centered final-scene">
+        <p class="eyebrow">FINAL TRANSMISSION / 006</p>
+        <div class="heart-orbit"><span>♡</span></div>
+        <h2 class="serif-heading">This part is <em>from me.</em></h2>
+        <p class="muted final-copy">Because some things sound better when they're said in your own voice.</p>
+
+        <div class="voice-card">
+          <div class="voice-icon">♫</div>
+          <div class="voice-info">
+            <p class="mono-label">VOICE NOTE / ANANYA</p>
+            <p class="voice-title">A little birthday message</p>
+            <p class="muted small">Recorded just for you.</p>
+          </div>
+          <span class="voice-heart">♡</span>
+          <audio id="voiceMessage" controls preload="metadata">
+            <source src="assets/voice-message.mp3" type="audio/mpeg" />
+            Your browser doesn't support audio.
+          </audio>
+        </div>
+
+        <p class="final-note">That's all, Dekchi.<br />Go have the birthday you deserve. ♡</p>
+        <button class="action-btn secondary-btn" id="restartBtn">
+          <span>REPLAY THIS LITTLE JOURNEY</span><span class="arrow">↻</span>
+        </button>
+      </div>
+      <span class="scene-number">06 / 06</span>
+    </section>
+  </main>
+
+  <footer><span>MADE WITH TOO MANY FEELINGS</span><span>© DEKCHI ARCHIVE</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
